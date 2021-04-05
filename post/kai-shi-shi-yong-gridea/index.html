@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" >
 
-<title>开始使用Gridea | 一个弟弟</title>
+<title>使用Gridea + GitHub Pages搭建一个blog | 一个弟弟</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://koooole.github.io/favicon.ico?v=1617555226489">
+<link rel="shortcut icon" href="https://koooole.github.io/favicon.ico?v=1617632357447">
 <link rel="stylesheet" href="https://koooole.github.io/styles/main.css">
 
 
@@ -24,16 +24,19 @@
 
 
 
-    <meta name="description" content="嘿！
+    <meta name="description" content="嘿！创建一个你的blog
 
-根据官方教程，使用Gridea创建博客只需要三个步骤即可完成简单的部署。
 
-创建一个GitHub账号并创建一个仓库；
-创建一个token；
-在Gridea客户端完成配置并保存同步。
+根据官方教程，使用Gridea创建博客只需要四个步骤即可完成简单的部署。
 
-..." />
-    <meta name="keywords" content="" />
+创建一个GitHub账号并创建一个仓库Token；
+创建仓库，存放构建后的网站文件；
+进入 Gridea 进行远程设置；
+同步
+
+
+0..." />
+    <meta name="keywords" content="Gridea" />
   </head>
   <body>
     <div id="app" class="main">
@@ -42,7 +45,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://koooole.github.io">
-        <img src="https://koooole.github.io/images/avatar.png?v=1617555226489" class="site-logo">
+        <img src="https://koooole.github.io/images/avatar.png?v=1617632357447" class="site-logo">
         <h1 class="site-title">一个弟弟</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -104,23 +107,86 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">开始使用Gridea</h2>
+            <h2 class="post-title">使用Gridea + GitHub Pages搭建一个blog</h2>
             <div class="post-date">2021-04-05</div>
             
-              <div class="feature-container" style="background-image: url('https://koooole.github.io/post-images/kai-shi-shi-yong-gridea.jpg')">
+              <div class="feature-container" style="background-image: url('https://koooole.github.io/post-images/kai-shi-shi-yong-gridea.png')">
               </div>
             
             <div class="post-content" v-pre>
-              <p>嘿！</p>
+              <p>嘿！创建一个你的blog</p>
+<hr>
 <!-- more -->
-<p>根据官方教程，使用Gridea创建博客只需要三个步骤即可完成简单的部署。</p>
+<p>根据官方教程，使用Gridea创建博客只需要四个步骤即可完成简单的部署。</p>
 <ol>
-<li>创建一个GitHub账号并创建一个仓库；</li>
-<li>创建一个token；</li>
-<li>在Gridea客户端完成配置并保存同步。</li>
+<li>创建一个GitHub账号并创建一个仓库Token；</li>
+<li>创建仓库，存放构建后的网站文件；</li>
+<li>进入 Gridea 进行远程设置；</li>
+<li>同步<br>
+<br></li>
 </ol>
+<h3 id="0-前提"><strong>0. 前提</strong></h3>
+<p>安装<a href="https://gridea.dev/">Gridea客户端</a><br>
+<br></p>
+<h3 id="1-创建github账号并新建仓库token"><strong>1. 创建GitHub账号并新建仓库Token</strong></h3>
+<ul>
+<li>首先，我们需要注册一个GitHub账号，点击<a href="https://github.com/">GitHub</a>进行注册。</li>
+<li>注册成功之后进行登录GitHub ，找到头像旁边的下拉三角形，进入settings -&gt; Developer settings -&gt; Personal access tokens，点击Generate new token生成token，勾选上 repo 的相关权限，拉至最后进行确认。<font color=#00BFFF size=3>生成之后记得把 Token 复制到你的本地，因为一旦关闭网页将不能再看到它。</font><br>
+<img src="https://koooole.github.io/post-images/1617629450707.jpg" alt="" loading="lazy"><br></li>
+</ul>
+<h3 id="2-创建仓库存放构建后的网站文件"><strong>2. 创建仓库，存放构建后的网站文件</strong></h3>
+<ul>
+<li>在右上角找到➕，点击new Repository</li>
+<li>Repository name填写上<code>账号名.github.io</code>，其中账号名即你的GitHub账号名称，比如我的账号名为koooole，那么我就应该写<code>koooole.github.io</code>，该仓库名后续将会作为你的域名</li>
+<li>仓库描述可有可无，权限勾选上public，拉至最后create repository。<br>
+<img src="https://koooole.github.io/post-images/1617630508925.jpg" alt="" loading="lazy"><br></li>
+</ul>
+<h3 id="3-进入-gridea-进行远程设置"><strong>3. 进入 Gridea 进行远程设置</strong></h3>
+<ul>
+<li>第一次打开Gridea客户端可先进行源文件位置的设置，左下角找到三条杠按钮，进入进行设置</li>
+<li>进行远程设置
+<ul>
+<li>域名：Github Pages 对应的域名</li>
+<li>仓库：你的静态文件存放的仓库，与域名一致</li>
+<li>分支：一般填写为master</li>
+<li>用户名：仓库所属用户的用户名（ Github 账号）</li>
+<li>邮箱：Git 推送时使用的邮箱（可不填写）</li>
+<li>令牌: 第一步生成的token</li>
+<li>CNAME: 可通过这个选项配置你自己的域名（没有则不填）</li>
+</ul>
+</li>
+<li>保存并检查远程连接<br>
+<img src="https://koooole.github.io/post-images/1617631143938.jpg" alt="" loading="lazy"><br>
+</br></li>
+</ul>
+<h3 id="4-同步"><strong>4. 同步</strong></h3>
+<p>点击 Gridea 中的 同步按钮即可。初次部署等待几分钟之后就可以去浏览器访问了，默认地址为你在第 3 步所填写的域名。<br>
+<br></p>
+<p>以上，就完成一个静态博客的搭建了。</br></p>
+<h3 id="其他"><strong>其他</strong></h3>
+<p><strong>一些遇到的问题</strong>：</p>
+<ol>
+<li>检查远程连接失败，可能是第三步信息填写错误，或者访问GitHub失败。
+<ul>
+<li>第一种情况，检查填写参数是否正确</li>
+<li>第二种情况，emm，就是用过GitHub的同志都知道，访问GitHub有时能访问有时不能，毕竟是外国网址。等能访问时再检查即可。</li>
+</ul>
+</li>
+<li>配置完成之后访问域名，显示拒绝连接<br>
+我的问题是电脑不能访问*.github.io这种网址，用手机访问的话，是可以打开的。<br>
+</br></li>
+</ol>
+<p>**End.**🤡</p>
 
             </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://koooole.github.io/tag/Tj6IaB_rc/" class="tag">
+                    Gridea
+                  </a>
+                
+              </div>
             
             
               <div class="next-post">
