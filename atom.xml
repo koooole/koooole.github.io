@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://koooole.github.io</id>
     <title>一个弟弟</title>
-    <updated>2021-04-05T15:05:00.038Z</updated>
+    <updated>2021-04-05T15:11:25.819Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://koooole.github.io"/>
     <link rel="self" href="https://koooole.github.io/atom.xml"/>
@@ -16,9 +16,11 @@
         <link href="https://koooole.github.io/post/kai-shi-shi-yong-gridea/">
         </link>
         <updated>2021-04-04T16:36:55.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏嘿！创建一个你的blog.</p>
+        <summary type="html"><![CDATA[</br>
+👏嘿！创建一个你的blog吧.
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏嘿！创建一个你的blog.</p>
+        <content type="html"><![CDATA[</br>
+👏嘿！创建一个你的blog吧.
 ]]></content>
     </entry>
 </feed>
